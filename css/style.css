@@ -2,6 +2,34 @@
 
 }
 
-body {
+:root {
     
+}
+
+body {
+
+}
+
+main, footer {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+/* Header */
+header {
+    color: white;
+}
+
+/* NavBar */
+
+.navbar {
+
+}
+
+/* Banner */
+
+/* Main */
+#work {
+    display: flex;
+    justify-content: center;
 }
