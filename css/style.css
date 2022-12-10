@@ -42,6 +42,7 @@ main, footer {
     padding-left: 20%;
     padding-right: 20%;
     margin-bottom: 0px;
+    border-radius: 0px;
 }
 
 /* --------- */
@@ -51,38 +52,77 @@ main {
     padding-top: 25px;
     padding-bottom: 35px;
 } 
+
+/* Work */
 #work {
     display: flex;
     justify-content: center;
     padding: 25px;
 }
-
 /* Card Containers */
 .cardContainer {
     padding-bottom: 35px;
-
+    display: flex;
+    justify-content: center;
 }
-
 .cardContainer .card-body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
-.cardContainer .btn .btn-primary {
-    width: 132px;
-}
+/* --------- */
 
-.AboutMePhoto {
-    border-radius: 50%;
+/* Footer */
+/* About Me */
+footer {
+    padding-left: 15%;
+    padding-right: 15%;
 }
-
-#cards .cardContainer {
-    display: flex;
-    justify-content: center;
-}
-
-#about {
+footer .jumbotron {
     display: flex;
     justify-content: space-between;
 }
+#AboutMeImg {
+    display: flex;
+    align-items: center;
+}
+#AboutMeText {
+    padding-right: 20px;
+}
+#AboutMePhoto {
+    border-radius: 50%;
+}
+
+/* Socials */
+footer .socials {
+    display: flex ;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+#Linkedin, #GitHub, #Instagram {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*Responsible design */
+@media only screen and (max-width: 875px) {
+
+    /* Footer */
+    footer .jumbotron {
+        flex-direction: column;
+        padding: 32px;
+    }
+    #AboutMeText {
+        padding-right: 0px;
+        padding-bottom: 50px;
+    }
+    #AboutMeImg {
+        justify-content: center;
+    }
+    #AboutMePhoto {
+        width: 300px;
+    }
+}
+
