@@ -1,35 +1,88 @@
-* {
+/* Bootstrap Portfolio */
+/* Abhinandan Thour */
 
+/* --------- */
+
+*{
+    padding: 0px;
+    margin: 0px;
 }
 
+/* Colors Palette */
 :root {
-    
+    --NavBG: #383838;
+    --WelcomeBG: #484848;
+    --GeneralBG: #f2f2f2;
 }
 
+/* Body Styling */
 body {
-
+    background-color: var(--GeneralBG);
 }
-
 main, footer {
     padding-left: 15%;
     padding-right: 15%;
 }
 
+
+/* --------- */
+
+
 /* Header */
-header {
-    color: white;
-}
-
 /* NavBar */
-
-.navbar {
-
+#nav .navbar{
+    padding-left: 15%;
+    padding-right: 15% ;    
 }
 
 /* Banner */
+#welcome .jumbotron {
+    background-color: var(--WelcomeBG);
+    color: var(--GeneralBG);
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 0px;
+}
+
+/* --------- */
 
 /* Main */
+main {
+    padding-top: 25px;
+    padding-bottom: 35px;
+} 
 #work {
     display: flex;
     justify-content: center;
+    padding: 25px;
+}
+
+/* Card Containers */
+.cardContainer {
+    padding-bottom: 35px;
+
+}
+
+.cardContainer .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardContainer .btn .btn-primary {
+    width: 132px;
+}
+
+.AboutMePhoto {
+    border-radius: 50%;
+}
+
+#cards .cardContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
 }
