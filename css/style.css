@@ -92,6 +92,21 @@ footer .jumbotron {
 #AboutMePhoto {
     border-radius: 50%;
 }
+#about .btn {
+    display: flex;
+    width: max-content;
+    align-content: center;
+    text-align: center;
+}
+/* #about .bi-download {
+    padding-right: 10px;
+} */
+#about h2 {
+    font-size: 20px;
+    margin: 0px;
+    text-align: center;
+    padding-left: 10px;
+}
 
 /* Socials */
 footer .socials {
