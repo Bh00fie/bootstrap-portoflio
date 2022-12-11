@@ -131,6 +131,12 @@ footer .socials {
 }
 
 /*Responsible design */
+@media only screen and (max-width: 991px) {
+    #nav .navbar {
+        padding-right: 10px;
+    }
+}
+
 @media only screen and (max-width: 875px) {
 
     /* Footer */
@@ -151,6 +157,12 @@ footer .socials {
 }
 
 @media only screen and (max-width: 550px) {
+    /* Welcome Banner */
+    #welcome .jumbotron {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
     /* Skill Section */
     #skillsection #skill-column {
         display: flex;
