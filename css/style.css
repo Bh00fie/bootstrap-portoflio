@@ -78,9 +78,8 @@ main {
 }
 
 /* Skills */
-#cards .align-self-center {
+#skillsection .align-self-center {
     padding: 20px;
-
 }
 
 /* --------- */
@@ -151,3 +150,24 @@ footer .socials {
     }
 }
 
+@media only screen and (max-width: 550px) {
+    #skillsection #skill-column {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #skillsection #skill-reverse-column{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #skillsection .cardContainer {
+        padding-bottom: 10px;
+    }
+
+    #skillsection .align-self-center {
+        padding-top: 10px;
+    }
+
+
+}
