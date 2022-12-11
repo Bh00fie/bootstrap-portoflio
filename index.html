@@ -58,7 +58,7 @@
               
             <p class="lead">In addition, the website includes a contact page with my email, phone number, and social media links, so that potential clients and collaborators can easily get in touch with me.</p>
             <br>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Switch Color Theme!</a>
+            <a class="btn btn-primary btn-lg" href="#" role="button" onclick="toggleTheme()">Switch Color Theme!</a>
           </div>
         </section>
     </header>
@@ -240,5 +240,32 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    
+    <!-- Added a JS function to change theme from light to dark and viceversa -->
+    <script>  
+      // function to set a given theme/color-scheme
+      function setTheme(themeName) {
+          localStorage.setItem('theme', themeName);
+          document.documentElement.className = themeName;
+      }
+
+      // function to toggle between light and dark theme
+      function toggleTheme() {
+          if (localStorage.getItem('theme') === 'theme-dark') {
+              setTheme('theme-light');
+          } else {
+              setTheme('theme-dark');
+          }
+      }
+
+      // Immediately invoked function to set the theme on initial load
+      (function () {
+          if (localStorage.getItem('theme') === 'theme-dark') {
+              setTheme('theme-dark');
+          } else {
+              setTheme('theme-light');
+          }
+      })();
+  </script>
 </body>
 </html>
