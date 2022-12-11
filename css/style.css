@@ -9,12 +9,20 @@
 }
 
 /* Colors Palette */
-:root {
+.theme-light {
+    --color-primary: #0060df;
+    --color-secondary: #fbfbfe;
+    --color-accent: #fd6f53;
+    --font-color: #000000;
+  }
+.theme-dark {
     --NavBG: #383838;
     --WelcomeBG: #484848;
     --GeneralBG: #f2f2f2;
+    --font-color: #ffffff;
 }
 
+/* Body */
 /* Body Styling */
 body {
     background-color: var(--GeneralBG);
