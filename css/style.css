@@ -54,7 +54,7 @@ main {
 } 
 
 /* Work */
-#work {
+#Myworktitle, #Myskilltitle {
     display: flex;
     justify-content: center;
     padding: 25px;
@@ -75,6 +75,12 @@ main {
     margin-left: auto;
     margin-right: auto;
     
+}
+
+/* Skills */
+#cards .align-self-center {
+    padding: 20px;
+
 }
 
 /* --------- */
@@ -104,10 +110,8 @@ footer .jumbotron {
     width: max-content;
     align-content: center;
     text-align: center;
+    
 }
-/* #about .bi-download {
-    padding-right: 10px;
-} */
 #about h2 {
     font-size: 20px;
     margin: 0px;
