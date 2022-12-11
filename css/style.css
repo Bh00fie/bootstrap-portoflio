@@ -69,6 +69,13 @@ main {
     display: flex;
     flex-direction: column;
 }
+.cardContainer .btn {
+    width: max-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 
 /* --------- */
 
@@ -115,7 +122,6 @@ footer .socials {
     padding-top: 20px;
     padding-bottom: 50px;
 }
-
 #Linkedin, #GitHub, #Instagram {
     padding-left: 10px;
     padding-right: 10px;
@@ -126,12 +132,12 @@ footer .socials {
 
     /* Footer */
     footer .jumbotron {
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 32px;
     }
     #AboutMeText {
         padding-right: 0px;
-        padding-bottom: 50px;
+        padding-top: 32px;
     }
     #AboutMeImg {
         justify-content: center;
