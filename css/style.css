@@ -151,23 +151,33 @@ footer .socials {
 }
 
 @media only screen and (max-width: 550px) {
+    /* Skill Section */
     #skillsection #skill-column {
         display: flex;
         flex-direction: column;
     }
-    
     #skillsection #skill-reverse-column{
         display: flex;
         flex-direction: column-reverse;
     }
-
     #skillsection .cardContainer {
         padding-bottom: 10px;
     }
-
     #skillsection .align-self-center {
         padding-top: 10px;
     }
 
-
+    /* Contact Me */
+    #AboutMeText {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #about .btn {
+        width: auto;
+    }
+    #AboutMePhoto {
+        width: 250px;
+        height: 250px;
+    }
 }
