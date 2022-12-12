@@ -88,7 +88,10 @@ main {
 /* Skills */
 #skillsection .align-self-center {
     padding: 20px;
+    width: 100px;
+    height: 100px;
 }
+
 
 /* --------- */
 
@@ -111,6 +114,7 @@ footer .jumbotron {
 }
 #AboutMePhoto {
     border-radius: 50%;
+    width: 250px;
 }
 #about .btn {
     display: flex;
@@ -138,6 +142,10 @@ footer .socials {
     padding-right: 10px;
 }
 
+#Linkedin:hover, #GitHub:hover, #Instagram:hover {
+    transition: 0.2s;
+    transform: scale(1.5);
+}
 /*Responsible design */
 @media only screen and (max-width: 991px) {
     #nav .navbar {
@@ -158,9 +166,6 @@ footer .socials {
     }
     #AboutMeImg {
         justify-content: center;
-    }
-    #AboutMePhoto {
-        width: 300px;
     }
 }
 
