@@ -10,10 +10,10 @@
 
 /* Colors Palette */
 .theme-light {
-    --color-primary: #0060df;
-    --color-secondary: #fbfbfe;
-    --color-accent: #fd6f53;
-    --font-color: #000000;
+    --NavBG: #989898;
+    --WelcomeBG: #484848;
+    --GeneralBG: #f2f2f2;
+    --font-color: #101010;
   }
 .theme-dark {
     --NavBG: #383838;
@@ -40,8 +40,10 @@ main, footer {
 /* NavBar */
 #nav .navbar{
     padding-left: 15%;
-    padding-right: 10% ;    
+    padding-right: 10%;   
+    background-color: var(--NavBG);
 }
+
 
 /* Banner */
 #welcome .jumbotron {
