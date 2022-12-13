@@ -40,7 +40,7 @@ main, footer {
 /* NavBar */
 #nav .navbar{
     padding-left: 15%;
-    padding-right: 15% ;    
+    padding-right: 10% ;    
 }
 
 /* Banner */
@@ -84,6 +84,10 @@ main {
     margin-right: auto;
     
 }
+#worksection .card-img-top {
+    background-size: cover;
+}
+
 
 /* Skills */
 #skillsection .align-self-center {
