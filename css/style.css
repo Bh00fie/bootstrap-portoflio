@@ -47,7 +47,9 @@ main, footer {
     color: var(--font-color);
     font-weight: 500;
 }
-
+/* #nav .navbar-toggler-icon {
+    background-color: #101010;
+} */
 
 /* Banner */
 #welcome .jumbotron {
