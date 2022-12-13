@@ -11,25 +11,25 @@
 /* Colors Palette */
 .theme-light {
     --NavBG: #989898;
-    --WelcomeBG: #484848;
+    --WelcomeBG: #c2c2c2;
     --GeneralBG: #f2f2f2;
     --font-color: #101010;
   }
 .theme-dark {
     --NavBG: #383838;
-    --WelcomeBG: #484848;
-    --GeneralBG: #f2f2f2;
+    --WelcomeBG: #646464;
+    --GeneralBG: #3d3d3d;
     --font-color: #ffffff;
 }
 
 /* Body */
 /* Body Styling */
-body {
-    background-color: var(--GeneralBG);
-}
+
 main, footer {
     padding-left: 15%;
     padding-right: 15%;
+    background-color: var(--GeneralBG);
+    color: var(--font-color);
 }
 
 
@@ -43,12 +43,16 @@ main, footer {
     padding-right: 10%;   
     background-color: var(--NavBG);
 }
+#nav a {
+    color: var(--font-color);
+    font-weight: 500;
+}
 
 
 /* Banner */
 #welcome .jumbotron {
     background-color: var(--WelcomeBG);
-    color: var(--GeneralBG);
+    color: var(--font-color);
     padding-left: 20%;
     padding-right: 20%;
     margin-bottom: 0px;
@@ -98,6 +102,9 @@ main {
     height: 100px;
 }
 
+main .card-body {
+    background-color: var(--GeneralBG);
+}
 
 /* --------- */
 
@@ -136,6 +143,10 @@ footer .jumbotron {
     padding-left: 10px;
 }
 
+footer .jumbotron {
+    background-color: var(--WelcomeBG);
+}
+
 /* Socials */
 footer .socials {
     display: flex ;
@@ -147,11 +158,19 @@ footer .socials {
     padding-left: 10px;
     padding-right: 10px;
 }
-
+/* Hover effect that increase the size of the icons */
 #Linkedin:hover, #GitHub:hover, #Instagram:hover {
     transition: 0.2s;
     transform: scale(1.5);
 }
+/* Hover to create of button when going with mouse */
+.btn:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
+    box-shadow: 0 0 11px rgba(33,33,33,.3);
+}
+
+
 /*Responsible design */
 @media only screen and (max-width: 991px) {
     #nav .navbar {
